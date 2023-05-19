@@ -1,0 +1,49 @@
+html{
+    font-size: 75%;
+    display: block;
+}
+
+body{
+    display: grid;
+    grid-template:1fr 4fr 4fr 1fr / 2fr 8fr 2fr;
+    width: 100vw;
+    height: 100vh;
+    gap:2rem;
+}
+body div, body ul{
+    border: 2px solid #c79800;
+    background-color: #ff8800;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+h2{
+    margin: 1rem 0;
+}
+
+li{
+    list-style: none;
+    line-height: 1.5;
+}
+li a{
+    /* text-decoration: none;
+    color: black; */
+}
+
+.header{
+    grid-area: 1/1/1/4;
+}
+
+.nav{
+    grid-area: 2/1/4/2;
+}
+
+.main{
+    grid-area: 2/3/4/2;
+}
+
+.Footer{
+    grid-area: 4/1/4/4;
+}
